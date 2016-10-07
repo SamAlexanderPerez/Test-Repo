@@ -1,14 +1,12 @@
-//Write your constructor function below.
-//You should have 2 instance variables and 1 instance function included.
-
-
-
-
-
-
-
-
-
-
-
-//Write your 3 new octocat objects below here.
+function Octocat(name,arms){
+  this.n=name;
+  this.a=arms;
+  this.slap=function(){
+    for(var s=0;s<this.a;s++){
+      console.log("SLAP");
+    }
+  };
+}
+var octocat1=new Octocat(Alex,5);
+var octocat2=new Octocat(Steve,4);
+var octocat3=new Octocat(John,7);
